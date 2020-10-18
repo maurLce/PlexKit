@@ -32,6 +32,7 @@ public struct PlexMediaItem: Codable, Hashable {
     public let viewOffset: Int?
     public let lastViewedAt: Date?
     public let thumb: String?
+    public let thumbBlurHash: String?
     public let art: String?
     public let banner: String?
     public let parentThumb: String?

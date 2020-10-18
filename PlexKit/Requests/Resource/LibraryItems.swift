@@ -14,7 +14,8 @@ public extension Plex.Request {
         public var path: String { "library/sections/\(key)/all" }
         public var queryItems: [URLQueryItem]? {
             var items: [URLQueryItem] = [
-                URLQueryItem(name: "type", value: mediaType.key)
+                URLQueryItem(name: "type", value: mediaType.key),
+                URLQueryItem(name: "includeFields", value: "thumbBlurHash")
             ]
 
             if let range = range, let start = range.first, let end = range.last {
